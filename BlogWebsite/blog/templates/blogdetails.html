@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}
+  Details about {{ blogdetails.ID }} {{ blogdetails.Title }}
+{% endblock %}
+
+
+{% block content %}
+<p><a href="/">HOME</a></p>
+  <h1>{{ blogdetails.ID }} {{ blogdetails.Title }}</h1>
+  
+  <p>Content {{ blogdetails.Content }}</p>
+  <p>Category: {{ blogdetails.Category}}</p>
+  <p>Date_Published: {{ blogdetails.Date_Published}}</p>
+  
+  <p>Back to <a href="/blogs">blogs</a></p>
+  
+{% endblock %}
